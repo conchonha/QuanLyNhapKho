@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1,2,3,4">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_column="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Mã VT"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Tên VT"
+                android:textSize="16sp"
+                android:layout_width="80dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_column="1"/>
+            <TextView
+                android:text="SL"
+                android:textSize="16sp"
+                android:layout_width="40dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_column="1"/>
+            <TextView
+                android:text="ĐVT"
+                android:textSize="16sp"
+                android:layout_width="40dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_column="1"/>
+        </TableRow>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
